@@ -64,22 +64,22 @@ def init_weights(m):
 		
 
 def load_data():
-    with open(r"C:\Users\lucas\Documents\TCC\training_ds\uniform_fed\training_seq"+sys.argv[1], "rb") as fp:
+    with open(r"/home/favaro/TCCLucas/TCC/uniform_fed_rar/training_seq"+sys.argv[1], "rb") as fp:
         training_sequences = pickle.load(fp)
 
-    with open(r"C:\Users\lucas\Documents\TCC\training_ds\uniform_fed\training_lab"+sys.argv[1], "rb") as fp:
+    with open(r"/home/favaro/TCCLucas/TCC/uniform_fed_rar/training_lab"+sys.argv[1], "rb") as fp:
         training_labels = pickle.load(fp)
 
-    with open(r"C:\Users\lucas\Documents\TCC\testing_ds\testing_seq", "rb") as fp:
+    with open(r"/home/favaro/TCCLucas/TCC/testing_seq", "rb") as fp:
         test_sequences = pickle.load(fp)
 
-    with open(r"C:\Users\lucas\Documents\TCC\testing_ds\testing_lab", "rb") as fp:
+    with open(r"/home/favaro/TCCLucas/TCC/testing_lab", "rb") as fp:
         test_labels = pickle.load(fp)
 
-    with open(r"C:\Users\lucas\Documents\TCC\testing_ds\val_sequences", "rb") as fp:
+    with open(r"/home/favaro/TCCLucas/TCC/val_sequences", "rb") as fp:
         val_sequences = pickle.load(fp)
 
-    with open(r"C:\Users\lucas\Documents\TCC\testing_ds\val_labels", "rb") as fp:
+    with open(r"/home/favaro/TCCLucas/TCC/val_labels", "rb") as fp:
         val_labels = pickle.load(fp)    
         
     train_normal_len = training_labels.count(0)
